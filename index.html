@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsChannel</title>
+    <style>
+        .navbar{
+            background-color: red;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none;
+            margin: 13px 18px;
+        }
+        .nav li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: bisque;
+        }
+       
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 3px 16px;
+        }
+        .videoDiv{
+         width: 70%; 
+         margin: 0 auto;
+         display: block;
+         
+        }
+        .movetext   li{
+            list-style: none;
+            float:left;
+            margin: 13px 17px;
+        }
+        li:hover{
+            background-color: aliceblue;
+        }
+        .latest{
+            width: 100%;
+            height: 350px;
+            display:flex;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+        
+        
+         .item{
+             border: 2px;
+             margin: 10px;
+             padding:3px;
+         }
+        .topstory{
+            margin: 0;
+            padding: 5px;
+            background-color:white;
+            align-items: center;
+
+        }
+        .topstory > h2, .story {
+             margin: 10px;
+             padding: 5px;
+        }
+
+        .story {
+            background: burlywood;
+        }
+
+        .story p {
+             margin: 4px;
+            font-size: 90%;
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+       <nav class="navbar">
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#topstories">top stories</a></li>
+            <li><a href="#latestvideos">latest videos</li>
+           </ul>
+       </nav>
+   </header> 
+   <div class="movetext">
+    
+   <marquee behaviour="alternate" direction="left" style="background-color:whitesmoke;">
+    <ul>
+        <li style="color: red;">Breaking News</li>
+        <li>  
+        <a href="https://zeenews.india.com/india/12-omicron-suspects-admitted-to-delhis-lnjp-hospital-so-far-sources-2415790.html?UTM_SRC=breakingnews">12 Omicron suspects admitted to Delhi&#039;s LNJP hospital so far: Sources</a>  </li>
+        <li>  
+        <a href="https://zeenews.india.com/india/omicron-scare-two-international-travellers-test-covid-19-positive-in-tamil-nadu-reports-awaited-2415787.html?UTM_SRC=breakingnews">Omicron scare: Two international travellers test COVID-19 positive in Tamil Nadu, reports awaited</a>  </li>
+        <li>  
+    </ul></div>                 
+    </ul>
+ </marquee>
+</div>
+
+
+   <div class="videoDiv">
+    <h1 style="color: black"> LIVE TV</h1>
+       
+        <iframe width="700" height="315" src="https://www.youtube.com/embed/Xmm3Kr5P1Uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+   <h2>LATEST VIDEOS</h2>
+    <div class="latest" id="latestvideos">
+        
+        
+            <div class="item"><iframe width="396" height="245" src="https://www.youtube.com/embed/MJjs6Ju19dc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="item"><iframe width="396" height="245" src="https://www.youtube.com/embed/qdGxJ5DK8HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="item"><iframe width="396" height="245" src="https://www.youtube.com/embed/cYegHgtXMZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="item"><iframe width="396" height="245" src="https://www.youtube.com/embed/cYegHgtXMZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    
+        
+    </div> 
+    <h2>TOP STORIES</h2> 
+    <div class="topstory" id="topstories">
+        
+        <article class="story">
+         <p>   India beat New Zealand by 372 runs at the Wankhede Stadium in Mumbai to win the two-match series 1-0.</p>
+    </article>
+    <article class="story">
+        <p>"Encouraging" Early Feedback On Omicron Severity, Says Top US Scientist: Report
+            "Omicron has a transmission advantage" in South Africa, where the variant was first reported, Anthony Fauci said in a CNN interview, noting the country had a low level of cases before it saw "almost a vertical spike upwards, which is almost exclusively Omicron."</p>
+    </article>
+    <article class="story">
+        <p> As India Seeks Putin's Weapons, Why US May Look Away This Time
+            Vladimir Putin is making his first foreign trip in nearly six months for talks with Prime Minister Narendra Modi</p>
+    </article>
+    <article class="story">
+        <p>Hyundai Rolls Out Year-End Benefits Of Up To ₹ 50,000 On Select Cars
+            Hyundai Motor India has announced year-end benefits of up to Rs. 50,000 on select models like Aura, Santro, Grand i10 Nios and i20 to clear out the inventory.</p>
+    </article>
+</div>
+   
+
+
+
+
+ 
+  
+   
+
+   
+    
+</body>
+</html>
